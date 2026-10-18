@@ -34,8 +34,6 @@ src/
 │   ├── BaseCard.vue
 │   ├── Clock.vue
 │   └── TaskItem.vue
-├── composables/
-│   └── useTasks.js
 ├── router/
 │   └── index.js
 ├── stores/
@@ -92,7 +90,6 @@ Navigation uses `RouterLink` and `RouterView` without full-page reloads.
 - Lifecycle hooks (`onMounted`, `onUnmounted`)
 - `nextTick()` and template refs
 - Default and named slots
-- Composables
 - `provide()` and `inject()`
 - Vue Router
 - Pinia
