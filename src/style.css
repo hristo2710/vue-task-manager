@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #e5e7eb;
+  background: #0f1117;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 760px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #1a1d27;
+  border: 1px solid #2c3140;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 24px;
+  color: #4adea0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #f3f4f6;
+}
+
+input {
+  background: #252936;
+  border: 1px solid #3b4252;
+  border-radius: 10px;
+  padding: 13px 16px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #4adea0;
+  box-shadow: 0 0 0 3px rgba(74, 222, 160, 0.1);
+}
+
+button {
+  background: #4adea0;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: #102017;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #34c98b;
+  transform: translateY(-1px);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.filters button {
+  background: #252936;
+  color: #cbd5e1;
+  flex: 1;
+}
+
+.filters button:hover {
+  background: #343b4d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #252936;
+  border: 1px solid #343b4d;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+
+li span {
+  cursor: pointer;
+  flex: 1;
+  font-size: 14px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+li button {
+  background: #3b2831;
+  color: #fb7185;
+  padding: 8px 14px;
+}
+
+li button:hover {
+  background: #58303e;
+}
+
+p {
+  color: #9ca3af;
+}
+
+@media (max-width: 600px) {
+  #app {
+    margin: 20px 12px;
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+}
+
+.filters button.active {
+  background: #4adea0;
+  color: #102017;
+}
+
+#app > div > p {
+  text-align: center;
+  margin: 12px 0 24px;
+  font-size: 14px;
+}
+
+#app > div > button:first-of-type {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.task-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.task-form input,
+.task-form button {
+  height: 46px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.task-form button {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.clock-container button {
+  margin: 0;
+}
+
+.clock-container p {
+  margin: 0;
+  text-align: center;
+}
